@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fakirah — Creative Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="porto.css">
+</head>
+
+<body>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="blob one"></div>
+<div class="blob two"></div>
+<div class="blob three"></div>
+<div class="cursor-dot" id="cursor"></div>
+
+<nav>
+  <a href="#home" class="logo">fakirah<span>.</span></a>
+
+  <div class="nav-links" id="primaryNavigation">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"><span class="theme-toggle-icon" id="themeIcon" aria-hidden="true">☾</span></button>
+    <button class="menu-btn" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="primaryNavigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
+  </div>
+</nav>
+
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="reveal">
+      <div class="eyebrow">✦ PPLG STUDENT • UI/UX • CREATIVE</div>
+
+      <h1>
+        Hi, I'm<br>
+        <span class="gradient" aria-label="Fakirah Arbaah Hulwah.">Fakirah Arbaah Hulwah.</span>
+      </h1>
+
+      <p>
+        I create playful interfaces, clean websites, and visual ideas
+        that feel simple, soft, and fun to explore.
+        Welcome to my little digital space.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn primary" href="#projects">Explore My Work ↗</a>
+        <a class="btn secondary" href="#contact">Let's Talk ♡</a>
+      </div>
+    </div>
+
+    <div class="hero-art" id="heroArt">
+
+      <div class="card-float main-card">
+        <img class="portrait" src="fakirahh.jpeg" alt="Fakirah Arbaah Hulwah">
+        <div class="name">Fakirah<br>Arbaah</div>
+        <div class="role">UI/UX • WEB • CREATIVE</div>
+      </div>
+
+      <div class="sticker a">♡ creative soul</div>
+      <div class="sticker b">✦ currently creating</div>
+      <div class="sticker c">PPLG student ♡</div>
+
+      <div class="star s1">✦</div>
+      <div class="star s2">✦</div>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="scrapbook reveal">
+      <div class="scrapbook-tabs" aria-hidden="true">
+        <span class="scrapbook-tab">My story</span>
+        <span class="scrapbook-tab">Things I love</span>
+        <span class="scrapbook-tab">Little by little</span>
+      </div>
+
+      <div class="scrapbook-sheet">
+        <div class="scrapbook-copy">
+          <div class="kicker">01 — a little about me</div>
+          <h2>Creative at heart,<br>leader in action.</h2>
+          <p>
+            Hi! I'm <strong>Fakirah Arbaah Hulwah</strong>, a PPLG student at
+            SMK Pariwisata Metland School. I love exploring UI/UX, web design,
+            branding, and creative digital projects.
+          </p>
+          <p>
+            I enjoy turning everyday ideas into visual, interactive experiences.
+            My design rule? Keep it clear, make it memorable, and add a little personality.
+          </p>
+
+          <div class="scrapbook-roles">
+            <div class="scrapbook-role">
+              <span class="scrapbook-role-mark">✦</span>
+              <div><strong>Secretary</strong><span>OSIS</span></div>
+            </div>
+            <div class="scrapbook-role">
+              <span class="scrapbook-role-mark">♡</span>
+              <div><strong>Vice Chair</strong><span>MetSchool Project (MSP)</span></div>
+            </div>
+          </div>
+
+          <div class="scrapbook-tags">
+            <span>UI/UX</span>
+            <span>PPLG</span>
+            <span>Creative</span>
+            <span>Web Design</span>
+          </div>
+        </div>
+
+        <div class="scrapbook-photo-area">
+          <span class="scrapbook-pin" aria-hidden="true"><span class="scrapbook-pin-head">♡</span></span>
+          <div class="scrapbook-polaroids">
+            <figure class="scrapbook-photo polaroid-one" aria-hidden="true">
+              <img src="sekre.jpeg" alt="">
+              <figcaption>little things</figcaption>
+            </figure>
+            <figure class="scrapbook-photo polaroid-two">
+              <img src="msp.jpeg" alt="Portrait of Fakirah Arbaah Hulwah">
+              <figcaption>dreams</figcaption>
+            </figure>
+          </div>
+          <div class="scrapbook-sticker">LEARN • CREATE • LEAD</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+
+    <div class="section-head reveal">
+      <div>
+        <div class="kicker">02 — things I can do</div>
+        <h2>My little<br>toolbox.</h2>
+      </div>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill reveal">
+        <div class="icon">✦</div>
+        <h3>UI / UX</h3>
+        <p>Wireframe, layout, prototype, user flow, and visual interface.</p>
+      </div>
+
+      <div class="skill reveal">
+        <div class="icon">⌁</div>
+        <h3>Web Design</h3>
+        <p>Turning visual concepts into responsive and interactive websites.</p>
+      </div>
+
+      <div class="skill reveal">
+        <div class="icon">♡</div>
+        <h3>Creative</h3>
+        <p>Branding, poster, visual concept, and creative direction.</p>
+      </div>
+
+      <div class="skill reveal">
+        <div class="icon">⌘</div>
+        <h3>Tools</h3>
+        <p>Figma, Canva, HTML, CSS, JavaScript, and Bootstrap.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+
+    <div class="section-head reveal">
+      <div>
+        <div class="kicker">03 — selected work</div>
+        <h2>Things I've<br>been making.</h2>
+      </div>
+
+      <p>Click any project to open the details.</p>
+    </div>
+
+    <div class="project-grid">
+
+      <div class="project project-uzbekistan reveal" tabindex="0" aria-label="Open details for Uzbekistan Travel"
+          data-icon="🇺🇿"
+           data-title="Uzbekistan Travel"
+           data-text="UI/UX travel website untuk perjalanan Samarkand 4H3M. Project ini berfokus pada visual destination, itinerary, hotel, dan pengalaman pengguna.">
+        <span class="number">01 / TRAVEL UI</span>
+        <span class="project-location"><span class="project-location-label">SAMARKAND • SILK ROAD</span></span>
+        <span class="project-emblem"><img src="uzbekistan.png" alt="Emblem Uzbekistan"></span>
+        <h3>Uzbekistan<br>Travel</h3>
+        <p>Samarkand 4H3M travel experience & interface.</p>
+        <a class="project-site" href="https://uzbekpedia.site" target="_blank" rel="noopener noreferrer">Uzbekpedia.site ↗</a>
+        <div class="open">↗</div>
+      </div>
+
+      <div class="project reveal" tabindex="0" aria-label="Open details for Fruitdrop"
+           data-icon="🍓"
+           data-title="Fruitdrop"
+           data-text="Konsep branding dan digital presence untuk bisnis fruit salad sekolah. Dibuat dengan visual fresh, playful, dan mudah dikenali.">
+        <span class="number">02 / BRANDING</span>
+        <h3>Fruitdrop</h3>
+        <p>A fresh little school business concept.</p>
+        <div class="open">↗</div>
+      </div>
+
+      <div class="project reveal" tabindex="0" aria-label="Open details for Personal Portfolio"
+           data-icon="💻"
+           data-title="Personal Portfolio"
+           data-text="Website portfolio pribadi untuk menampilkan skill, project, dan personal branding menggunakan HTML, CSS, dan JavaScript.">
+        <span class="number">03 / WEB</span>
+        <h3>Personal<br>Portfolio</h3>
+        <p>A digital space for my work and ideas.</p>
+        <div class="open">↗</div>
+      </div>
+
+      <div class="project reveal" tabindex="0" aria-label="Open details for Doodloo"
+           data-icon="🎨"
+           data-title="Doodloo"
+           data-text="Konsep creative tool yang ringan dan beginner-friendly dengan visual pastel untuk membuat desain sederhana.">
+        <span class="number">04 / PRODUCT</span>
+        <h3>Doodloo</h3>
+        <p>A cute and simple creative tool concept.</p>
+        <div class="open">↗</div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+
+    <div class="section-head reveal">
+      <div>
+        <div class="kicker">04 — achievements</div>
+        <h2>My<br>achievements.</h2>
+      </div>
+    </div>
+
+    <div class="certificate-printer reveal" aria-label="Certificate printer showing six certificates">
+      <div class="certificate-printer-head">
+        <div class="certificate-printer-title">
+          <span class="printer-mark" aria-hidden="true">✦</span>
+          <div>
+            <small>Little milestones</small>
+            <strong>Fresh from the printer</strong>
+          </div>
+        </div>
+        <div class="printer-tools">
+          <div class="printer-status" id="printerStatus" aria-live="polite">6 certificates</div>
+          <button class="printer-reprint" id="printerReprint" type="button" aria-label="Print the certificate again">
+            <span class="printer-reprint-icon" aria-hidden="true">↻</span>Print again
+          </button>
+        </div>
+      </div>
+      <div class="printer-slot" aria-hidden="true"></div>
+      <div class="certificate-output">
+        <div class="certificate-filmstrip" aria-label="Collection of certificates">
+          <figure class="certificate-filmstrip-frame">
+            <button class="certificate-zoom" type="button" aria-label="Perbesar sertifikat FAHAM AI" aria-haspopup="dialog"><img src="SERTIFPAHAMAI.png" alt="FAHAM AI training certificate"><span class="certificate-zoom-indicator" aria-hidden="true">⤢</span></button>
+            <figcaption><span>PELATIHAN PROGRAM FAHAM AI</span><strong>KEMENDIKDASMEN 2026</strong></figcaption>
+          </figure>
+          <figure class="certificate-filmstrip-frame">
+            <button class="certificate-zoom" type="button" aria-label="Perbesar sertifikat Boofest" aria-haspopup="dialog"><img src="sertifboofest.jpg" alt="Boofest certificate"><span class="certificate-zoom-indicator" aria-hidden="true">⤢</span></button>
+            <figcaption><span>CERTIFICATE MSP</span><strong>BOOFEST 2026</strong></figcaption>
+          </figure>
+          <figure class="certificate-filmstrip-frame">
+            <button class="certificate-zoom" type="button" aria-label="Perbesar sertifikat Indonesia Berkarakter" aria-haspopup="dialog"><img src="sertifindonesiaberkarakter.jpg" alt="Indonesia Berkarakter certificate"><span class="certificate-zoom-indicator" aria-hidden="true">⤢</span></button>
+            <figcaption><span>CERTIFICATE MSP</span><strong>INDONESIA BERKARAKTER 2026</strong></figcaption>
+          </figure>
+          <figure class="certificate-filmstrip-frame">
+            <button class="certificate-zoom" type="button" aria-label="Perbesar sertifikat Mother" aria-haspopup="dialog"><img src="sertifmother.jpg" alt="Mother certificate"><span class="certificate-zoom-indicator" aria-hidden="true">⤢</span></button>
+            <figcaption><span>CERTIFICATE MSP</span><strong>MOTHER'S DAY DINING EXPERIENCE</strong></figcaption>
+          </figure>
+          <figure class="certificate-filmstrip-frame">
+            <button class="certificate-zoom" type="button" aria-label="Perbesar sertifikat Natal" aria-haspopup="dialog"><img src="sertifnatal.jpg" alt="Christmas certificate"><span class="certificate-zoom-indicator" aria-hidden="true">⤢</span></button>
+            <figcaption><span>CERTIFICATE MSP</span><strong>NATAL 2026</strong></figcaption>
+          </figure>
+          <figure class="certificate-filmstrip-frame">
+            <button class="certificate-zoom" type="button" aria-label="Perbesar sertifikat Valentine" aria-haspopup="dialog"><img src="sertifvalentine.jpg" alt="Valentine certificate"><span class="certificate-zoom-indicator" aria-hidden="true">⤢</span></button>
+            <figcaption><span>CERTIFICATE MSP</span><strong>VALENTINE 2026</strong></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <div class="contact reveal">
+      <div class="kicker">05 — say hello</div>
+      <h2>Have an idea?</h2>
+      <p>
+        Let's turn it into something cute, useful,
+        and memorable.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn primary" href="mailto:fakirah@example.com">Email Me ♡</a>
+        <a class="btn secondary" href="https://wa.me/6289627864613" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+        <a class="btn secondary" href="https://www.instagram.com/fakiraaah/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <a class="btn secondary" href="#home">Back to top ↑</a>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Fakirah Arbaah Hulwah · made with ♡
+</footer>
+
+<aside class="scroll-popup" id="scrollPopup" aria-labelledby="scrollPopupTitle" aria-hidden="true">
+  <div class="scroll-popup-mark" aria-hidden="true">✦</div>
+  <div class="scroll-popup-copy">
+    <h2 id="scrollPopupTitle">Ada ide seru?</h2>
+    <p>Yuk ngobrol soal project atau kolaborasi berikutnya.</p>
+    <a class="scroll-popup-link" id="scrollPopupLink" href="#contact">Ngobrol yuk ↗</a>
+  </div>
+  <button class="scroll-popup-close" id="scrollPopupClose" type="button" aria-label="Tutup popup">×</button>
+</aside>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+
+  <div class="modal-box">
+
+    <button class="modal-close" id="closeModal">×</button>
+
+    <div class="modal-icon" id="modalIcon">✦</div>
+
+    <h3 id="modalTitle">Project</h3>
+
+    <p id="modalText">Description</p>
+
+    <div class="hero-buttons">
+      <button class="btn primary" id="modalCloseButton">Nice! ♡</button>
+    </div>
+
+  </div>
+</div>
+
+<dialog class="certificate-lightbox" id="certificateLightbox" aria-label="Certificate preview">
+  <button class="certificate-lightbox-close" id="certificateLightboxClose" type="button" aria-label="Tutup sertifikat">×</button>
+  <img id="certificateLightboxImage" src="SERTIFPAHAMAI.png" alt="Full-size certificate">
+</dialog>
+
+
+<script>
+/* ==========================
+   THEME TOGGLE
+========================== */
+const themeToggle = document.getElementById("themeToggle");
+const themeIcon = document.getElementById("themeIcon");
+let savedTheme = "light";
+try{
+  savedTheme = localStorage.getItem("portfolio-theme") || "light";
+}catch(error){}
+
+if(savedTheme === "dark"){
+  document.documentElement.dataset.theme = "dark";
+}
+
+function updateThemeToggle(){
+  const isDark = document.documentElement.dataset.theme === "dark";
+  themeIcon.textContent = isDark ? "☀" : "☾";
+  themeToggle.setAttribute("aria-label",isDark ? "Switch to light mode" : "Switch to dark mode");
+  themeToggle.title = isDark ? "Switch to light mode" : "Switch to dark mode";
+}
+
+themeToggle.addEventListener("click",()=>{
+  const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+  const root = document.documentElement;
+  const buttonBounds = themeToggle.getBoundingClientRect();
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  root.style.setProperty("--theme-origin-x",`${buttonBounds.left + buttonBounds.width/2}px`);
+  root.style.setProperty("--theme-origin-y",`${buttonBounds.top + buttonBounds.height/2}px`);
+
+  const applyTheme = ()=>{
+    if(nextTheme === "dark"){
+      root.dataset.theme = "dark";
+    }else{
+      delete root.dataset.theme;
+    }
+
+    try{
+      localStorage.setItem("portfolio-theme",nextTheme);
+    }catch(error){}
+
+    updateThemeToggle();
+  };
+
+  if(reduceMotion){
+    applyTheme();
+    return;
+  }
+
+  themeToggle.classList.add("is-changing");
+  if(typeof document.startViewTransition === "function"){
+    root.classList.add("theme-transitioning");
+    let themeApplied = false;
+    try{
+      const transition = document.startViewTransition(()=>{
+        applyTheme();
+        themeApplied = true;
+      });
+      transition.ready.catch(()=>{});
+      transition.finished.then(
+        ()=>root.classList.remove("theme-transitioning"),
+        ()=>{
+          root.classList.remove("theme-transitioning");
+          if(!themeApplied) applyTheme();
+        }
+      );
+    }catch(error){
+      root.classList.remove("theme-transitioning");
+      applyTheme();
+    }
+  }else{
+    applyTheme();
+  }
+  window.setTimeout(()=>themeToggle.classList.remove("is-changing"),1050);
+});
+updateThemeToggle();
+
+/* ==========================
+   NAME TYPEWRITER
+========================== */
+const typedName = document.querySelector(".hero h1 .gradient");
+if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+  const fullName = typedName.textContent;
+  const characters = Array.from(fullName);
+  let characterIndex = 0;
+
+  typedName.textContent = "";
+  typedName.classList.add("typing");
+
+  const typingTimer = setInterval(()=>{
+    typedName.textContent += characters[characterIndex];
+    characterIndex++;
+
+    if(characterIndex >= characters.length){
+      clearInterval(typingTimer);
+    }
+  },100);
+}
+
+/* ==========================
+   MOBILE MENU
+========================== */
+function toggleMenu(){
+  const links = document.querySelector(".nav-links");
+  const menuToggle = document.getElementById("menuToggle");
+  const isOpen = links.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded",String(isOpen));
+  menuToggle.setAttribute("aria-label",isOpen ? "Close navigation menu" : "Open navigation menu");
+}
+
+/* ==========================
+   SCROLL REVEAL
+========================== */
+let bubbleAudioContext;
+
+function getSharedAudioContext(){
+  const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+  if(!AudioContextClass) return null;
+
+  bubbleAudioContext ||= new AudioContextClass();
+  return bubbleAudioContext;
+}
+
+function unlockPageAudio(){
+  const context = getSharedAudioContext();
+  if(context?.state === "suspended") context.resume().catch(()=>{});
+}
+
+window.addEventListener("pointerdown",unlockPageAudio,{once:true});
+window.addEventListener("keydown",unlockPageAudio,{once:true});
+
+function playPrinterSound(phase){
+  const context = getSharedAudioContext();
+  if(!context) return;
+
+  const play = ()=>{
+    const start = context.currentTime;
+
+    if(phase === "start"){
+      const roller = context.createOscillator();
+      const volume = context.createGain();
+      roller.type = "sawtooth";
+      roller.frequency.setValueAtTime(92,start);
+      roller.frequency.exponentialRampToValueAtTime(148,start+.42);
+      roller.frequency.exponentialRampToValueAtTime(112,start+.82);
+      volume.gain.setValueAtTime(.0001,start);
+      volume.gain.exponentialRampToValueAtTime(.026,start+.06);
+      volume.gain.setValueAtTime(.026,start+.58);
+      volume.gain.exponentialRampToValueAtTime(.0001,start+.88);
+      roller.connect(volume);
+      volume.connect(context.destination);
+      roller.start(start);
+      roller.stop(start+.9);
+      return;
+    }
+
+    const isNotification = phase === "notify";
+    const notes = isNotification ? [880,1174] : [620,840];
+    const peakGain = isNotification ? .12 : .035;
+    notes.forEach((frequency,index)=>{
+      const tone = context.createOscillator();
+      const volume = context.createGain();
+      const toneStart = start + index*.11;
+      tone.type = "sine";
+      tone.frequency.setValueAtTime(frequency,toneStart);
+      volume.gain.setValueAtTime(.0001,toneStart);
+      volume.gain.exponentialRampToValueAtTime(peakGain,toneStart+.012);
+      volume.gain.exponentialRampToValueAtTime(.0001,toneStart+.13);
+      tone.connect(volume);
+      volume.connect(context.destination);
+      tone.start(toneStart);
+      tone.stop(toneStart+.14);
+    });
+  };
+
+  if(context.state === "suspended"){
+    context.resume().then(play).catch(()=>{});
+  }else{
+    play();
+  }
+}
+
+const certificatePrinter = document.querySelector(".certificate-printer");
+const certificateFilmstrip = document.querySelector(".certificate-filmstrip");
+const printerReprint = document.getElementById("printerReprint");
+const printerStatus = document.getElementById("printerStatus");
+
+function printMilestones(){
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  certificatePrinter.classList.remove("is-printing");
+  printerReprint.disabled = !reduceMotion;
+  playPrinterSound("start");
+
+  if(reduceMotion){
+    certificatePrinter.classList.add("is-printing");
+    printerStatus.classList.remove("is-printing");
+    printerStatus.textContent = "6 certificates";
+    printerReprint.disabled = false;
+    playPrinterSound("finish");
+    return;
+  }
+
+  printerStatus.classList.add("is-printing");
+  printerStatus.textContent = "Printing...";
+  void certificateFilmstrip.offsetWidth;
+  certificatePrinter.classList.add("is-printing");
+}
+
+certificateFilmstrip.addEventListener("animationend",event=>{
+  if(event.target !== certificateFilmstrip || event.animationName !== "certificate-film-print") return;
+
+  printerStatus.classList.remove("is-printing");
+  printerStatus.textContent = "6 certificates";
+  printerReprint.disabled = false;
+  playPrinterSound("finish");
+});
+
+printerReprint.addEventListener("click",printMilestones);
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+      if(entry.target === certificatePrinter && entry.target.dataset.printed !== "true"){
+        entry.target.dataset.printed = "true";
+        printMilestones();
+      }
+    }else{
+      entry.target.classList.remove("visible");
+    }
+  });
+},{threshold:.12});
+
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+
+
+/* ==========================
+   ACTIVE NAV
+========================== */
+const navLinks = document.querySelectorAll(".nav-links a");
+const sections = document.querySelectorAll("section[id]");
+const scrollProgress = document.getElementById("scrollProgress");
+const scrollPopup = document.getElementById("scrollPopup");
+let hasShownScrollPopup = false;
+try{
+  hasShownScrollPopup = sessionStorage.getItem("portfolio-scroll-popup-shown-v2") === "true";
+}catch(error){}
+
+function updatePagePosition(){
+  const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollableHeight > 0 ? window.scrollY / scrollableHeight : 0;
+  scrollProgress.style.transform = `scaleX(${Math.min(1,Math.max(0,progress))})`;
+  if(progress >= .3 && !hasShownScrollPopup){
+    scrollPopup.classList.add("is-visible");
+    scrollPopup.setAttribute("aria-hidden","false");
+    playPrinterSound("notify");
+    hasShownScrollPopup = true;
+    try{
+      sessionStorage.setItem("portfolio-scroll-popup-shown-v2","true");
+    }catch(error){}
+  }
+  let current = "";
+
+  sections.forEach(section=>{
+    const top = section.offsetTop - 180;
+
+    if(scrollY >= top){
+      current = section.id;
+    }
+  });
+
+  navLinks.forEach(link=>{
+    const isCurrent = link.getAttribute("href") === "#" + current;
+    link.classList.toggle("active",isCurrent);
+    if(isCurrent){
+      link.setAttribute("aria-current","location");
+    }else{
+      link.removeAttribute("aria-current");
+    }
+  });
+
+}
+
+window.addEventListener("scroll",updatePagePosition,{passive:true});
+window.addEventListener("resize",updatePagePosition);
+updatePagePosition();
+
+function hideScrollPopup(){
+  scrollPopup.classList.remove("is-visible");
+  scrollPopup.setAttribute("aria-hidden","true");
+}
+
+document.getElementById("scrollPopupClose").addEventListener("click",hideScrollPopup);
+document.getElementById("scrollPopupLink").addEventListener("click",hideScrollPopup);
+
+navLinks.forEach(link=>{
+  link.addEventListener("click",()=>{
+    if(window.innerWidth <= 800){
+      document.querySelector(".nav-links").classList.remove("open");
+      const menuToggle = document.getElementById("menuToggle");
+      menuToggle.setAttribute("aria-expanded","false");
+      menuToggle.setAttribute("aria-label","Open navigation menu");
+    }
+  });
+});
+
+
+/* ==========================
+   DRAG / TILT HERO CARD
+========================== */
+const heroArt = document.getElementById("heroArt");
+const mainCard = document.querySelector(".main-card");
+
+heroArt.addEventListener("mousemove",(e)=>{
+  const rect = heroArt.getBoundingClientRect();
+
+  const x = (e.clientX - rect.left) / rect.width - .5;
+  const y = (e.clientY - rect.top) / rect.height - .5;
+
+  mainCard.style.transform =
+    `translateX(calc(-50% + ${x*25}px))
+     translateY(${y*25}px)
+     rotate(${5+x*8}deg)`;
+});
+
+heroArt.addEventListener("mouseleave",()=>{
+  mainCard.style.transform =
+    "translateX(-50%) rotate(5deg)";
+});
+
+function playBubblePop(){
+  const context = getSharedAudioContext();
+  if(!context) return;
+  if(bubbleAudioContext.state === "suspended"){
+    bubbleAudioContext.resume().catch(()=>{});
+  }
+
+  const now = context.currentTime;
+  const blubStarts = [0,.09,.23,.32];
+  const pitches = [420,300,380,270];
+
+  blubStarts.forEach((delay,index)=>{
+    const start = now + delay;
+    const oscillator = context.createOscillator();
+    const volume = context.createGain();
+
+    oscillator.type = "triangle";
+    oscillator.frequency.setValueAtTime(pitches[index],start);
+    oscillator.frequency.exponentialRampToValueAtTime(95,start+.12);
+    volume.gain.setValueAtTime(.0001,start);
+    volume.gain.exponentialRampToValueAtTime(.12,start+.01);
+    volume.gain.exponentialRampToValueAtTime(.0001,start+.14);
+    oscillator.connect(volume);
+    volume.connect(context.destination);
+    oscillator.start(start);
+    oscillator.stop(start+.15);
+  });
+}
+
+mainCard.addEventListener("mouseenter",()=>{
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  playBubblePop();
+
+  const cardBounds = mainCard.getBoundingClientRect();
+  const artBounds = heroArt.getBoundingClientRect();
+
+  for(let index=0;index<14;index++){
+    const bubble = document.createElement("span");
+    const edge = Math.floor(Math.random()*4);
+    let x;
+    let y;
+
+    if(edge===0){
+      x = Math.random()*cardBounds.width;
+      y = 0;
+    }else if(edge===1){
+      x = cardBounds.width;
+      y = Math.random()*cardBounds.height;
+    }else if(edge===2){
+      x = Math.random()*cardBounds.width;
+      y = cardBounds.height;
+    }else{
+      x = 0;
+      y = Math.random()*cardBounds.height;
+    }
+
+    const size = 10 + Math.random()*18;
+    bubble.className = "bubble-particle";
+    bubble.style.width = `${size}px`;
+    bubble.style.height = `${size}px`;
+    bubble.style.left = `${cardBounds.left - artBounds.left + x - size/2}px`;
+    bubble.style.top = `${cardBounds.top - artBounds.top + y - size/2}px`;
+    bubble.style.setProperty("--drift-x", `${(Math.random()-.5)*110}px`);
+    bubble.style.setProperty("--drift-y", `${-50-Math.random()*100}px`);
+    bubble.style.animationDelay = `${Math.random()*.35}s`;
+    heroArt.appendChild(bubble);
+    bubble.addEventListener("animationend",()=>bubble.remove(),{once:true});
+  }
+});
+
+
+/* ==========================
+   CURSOR GLOW
+========================== */
+const cursor = document.getElementById("cursor");
+
+window.addEventListener("mousemove",(e)=>{
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+});
+
+
+/* ==========================
+   PROJECT MODAL
+========================== */
+const certificateLightbox = document.getElementById("certificateLightbox");
+const certificateLightboxImage = document.getElementById("certificateLightboxImage");
+
+document.querySelectorAll(".certificate-zoom").forEach(zoomButton=>zoomButton.addEventListener("click",()=>{
+  const image = zoomButton.querySelector("img");
+  certificateLightboxImage.src = image.src;
+  certificateLightboxImage.alt = `Full-size ${image.alt}`;
+  certificateLightbox.showModal();
+}));
+
+document.getElementById("certificateLightboxClose").addEventListener("click",()=>{
+  certificateLightbox.close();
+});
+
+certificateLightbox.addEventListener("click",event=>{
+  if(event.target === certificateLightbox) certificateLightbox.close();
+});
+
+const modal = document.getElementById("modal");
+const modalIcon = document.getElementById("modalIcon");
+const modalTitle = document.getElementById("modalTitle");
+const modalText = document.getElementById("modalText");
+
+document.querySelectorAll(".project,.gallery-card").forEach(card=>{
+  card.addEventListener("pointermove",event=>{
+    if(event.pointerType !== "mouse") return;
+
+    const rect = card.getBoundingClientRect();
+    card.style.setProperty("--spot-x",`${event.clientX-rect.left}px`);
+    card.style.setProperty("--spot-y",`${event.clientY-rect.top}px`);
+  });
+
+  card.addEventListener("pointerleave",()=>{
+    card.style.removeProperty("--spot-x");
+    card.style.removeProperty("--spot-y");
+  });
+
+  function openCardDetails(event){
+    if(event.target.closest("a")) return;
+
+    modalIcon.textContent = card.dataset.icon || "✦";
+    modalTitle.textContent = card.dataset.title;
+    modalText.textContent = card.dataset.text;
+
+    modal.classList.add("show");
+    document.body.style.overflow = "hidden";
+  }
+
+  card.addEventListener("click",openCardDetails);
+  card.addEventListener("keydown",event=>{
+    if((event.key === "Enter" || event.key === " ") && !event.target.closest("a,button")){
+      event.preventDefault();
+      card.click();
+    }
+  });
+});
+
+function closeModal(){
+  modal.classList.remove("show");
+  document.body.style.overflow = "";
+}
+
+document.getElementById("closeModal").addEventListener("click",closeModal);
+document.getElementById("modalCloseButton").addEventListener("click",closeModal);
+
+modal.addEventListener("click",(e)=>{
+  if(e.target === modal) closeModal();
+});
+
+document.addEventListener("keydown",(e)=>{
+  if(e.key === "Escape"){
+    closeModal();
+    document.querySelector(".nav-links").classList.remove("open");
+    const menuToggle = document.getElementById("menuToggle");
+    menuToggle.setAttribute("aria-expanded","false");
+    menuToggle.setAttribute("aria-label","Open navigation menu");
+  }
+});
+
+
+/* ==========================
+   MAGNETIC BUTTON
+========================== */
+document.querySelectorAll(".btn").forEach(button=>{
+  button.addEventListener("mousemove",(e)=>{
+    const rect = button.getBoundingClientRect();
+
+    const x = e.clientX - rect.left - rect.width/2;
+    const y = e.clientY - rect.top - rect.height/2;
+
+    button.style.transform =
+      `translate(${x*.08}px,${y*.08}px)`;
+  });
+
+  button.addEventListener("mouseleave",()=>{
+    button.style.transform = "";
+  });
+});
+
+
+/* ==========================
+   RANDOM FLOATING BLOBS
+========================== */
+if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+  setInterval(()=>{
+    document.querySelectorAll(".blob").forEach((blob,index)=>{
+      const x = Math.sin(Date.now()/2800 + index) * 55;
+      const y = Math.cos(Date.now()/3400 + index) * 48;
+
+      blob.style.transform =
+        `translate(${x}px,${y}px)`;
+    });
+  },60);
+}
+</script>
+
+</body>
+</html>
